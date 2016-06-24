@@ -1,0 +1,75 @@
+doctype html
+html
+  head
+    title= title
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    //if lte IE 8
+      script(src='assets/js/ie/html5shiv.js')
+    link(rel='stylesheet', href='assets/css/main.css')
+    //if lte IE 8
+      link(rel='stylesheet', href='assets/css/ie8.css')
+  body
+    #page-wrapper
+      // Header
+      #header-wrapper
+        //- TODO: customize styles
+        #header.container(style="box-shadow: none; border-bottom:0;")
+          // Logo
+          h1#logo
+            a(href='/')= title
+          p= description
+          // Nav
+          nav#nav
+            ul
+              li
+                a.icon.fa-home(href='/')
+                  span Home
+              li
+                a.icon.fa-bar-chart-o(href='#')
+                  span Dropdown
+                ul
+                  li
+                    a(href='#') Lorem ipsum dolor
+                  li
+                    a(href='#') Magna phasellus
+                  li
+                    a(href='#') Etiam dolore nisl
+                  li
+                    a(href='#') Phasellus consequat
+                    ul
+                      li
+                        a(href='#') Magna phasellus
+                      li
+                        a(href='#') Etiam dolore nisl
+                      li
+                        a(href='#') Phasellus consequat
+                  li
+                    a(href='#') Veroeros feugiat
+              li
+                a.icon.fa-cog(href='left-sidebar')
+                  span Recipes
+              li
+                a.icon.fa-retweet(href='blog')
+                  span Blog
+              li
+                a.icon.fa-sitemap(href='contact')
+                  span Contact
+      
+      //- this is the content section
+      != yield
+      
+      // Footer
+      #footer-wrapper
+        #copyright.container
+          ul.links
+            li © Untitled. All rights reserved.
+    // Scripts
+    script(src='assets/js/jquery.min.js')
+    script(src='assets/js/jquery.dropotron.min.js')
+    script(src='assets/js/skel.min.js')
+    script(src='assets/js/skel-viewport.min.js')
+    script(src='assets/js/util.js')
+    //if lte IE 8
+      script(src='assets/js/ie/respond.min.js')
+    script(src='assets/js/main.js')
