@@ -1,0 +1,30 @@
+{
+  "name": "cinnamon-crumbs",
+  "version": "0.1.0",
+  "description": "nutrition blog",
+  "main": "index.js",
+  "scripts": {
+    "harp:dev": "harp server --port 8999",
+    "harp:prod": "NODE_ENV=production harp server --port 8999",
+    "start": "sudo docker-compose -f docker-compose.prod.yml up",
+    "dev": "sudo docker-compose up"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gillchristian/cinnamon-crumbs.git"
+  },
+  "keywords": [
+    "nutrition",
+    "blog",
+    "harpjs",
+    "static",
+    "health",
+    "healthy-recipes"
+  ],
+  "author": "gillchristian",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gillchristian/cinnamon-crumbs/issues"
+  },
+  "homepage": "https://github.com/gillchristian/cinnamon-crumbs#readme"
+}
