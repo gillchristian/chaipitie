@@ -1,0 +1,38 @@
+#header-wrapper
+  #header.container(style="box-shadow: none; border-bottom:0;")
+    // Logo
+    h1#logo
+      a(href='/')= title
+    p= description
+    // Nav
+    nav#nav
+      ul
+        li
+          a.icon.fa-home(href='/')
+            span Inicio
+        li
+          a.icon.fa-female(href='/')
+            span Conoceme
+        li
+          a.icon.fa-birthday-cake(href='/no-sidebar')
+            span Productos
+        li
+          a.icon.fa-cutlery(href='/left-sidebar')
+            span Recetas
+          ul
+            li
+              a(href='/') Dulces
+            li
+              a(href='/') Saladas
+            li
+              a(href='/') Veganas
+            li
+              a(href='/') Sin Gluten
+            li
+              a(href='/') Fit
+        li
+          a.icon.fa-rss(href='/blog')
+            span Blog
+        li
+          a.icon.fa-envelope-o(href='/contact')
+            span Contacto
