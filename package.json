@@ -1,7 +1,7 @@
 {
-  "name": "cinnamon-crumbs",
+  "name": "chaipitie",
   "version": "0.1.0",
-  "description": "nutrition blog",
+  "description": "rocio jalifi's nutrition blog",
   "main": "index.js",
   "scripts": {
     "harp:dev": "harp server --port 8999",
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gillchristian/cinnamon-crumbs.git"
+    "url": "git+https://github.com/gillchristian/chaipitie.git"
   },
   "keywords": [
     "nutrition",
@@ -24,7 +24,7 @@
   "author": "gillchristian",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/gillchristian/cinnamon-crumbs/issues"
+    "url": "https://github.com/gillchristian/chaipitie/issues"
   },
-  "homepage": "https://github.com/gillchristian/cinnamon-crumbs#readme"
+  "homepage": "https://github.com/gillchristian/chaipitie#readme"
 }
