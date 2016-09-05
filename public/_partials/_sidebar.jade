@@ -1,0 +1,39 @@
+// Excerpts
+section
+  ul.divided
+    - each article, slug in public.blog._data
+      - if (article.isFeatured)
+        li
+          // Excerpt
+          article.box.excerpt
+            header
+              span.date July 30
+              h3
+                a(href='/blog/#{slug}') #{article.title}
+            p
+              | Lorem ipsum dolor odio facilisis convallis. Etiam non nunc vel est
+              | suscipit convallis non id orci lorem ipsum sed magna consequat feugiat lorem dolore.
+            ul.actions
+              li
+                a.button.icon.fa-file(href='/blog/#{slug}') Leer Más
+// Highlights
+section
+  ul.divided
+    - each article, slug in public.blog._data
+      - if (article.isFeatured)
+        li
+          // Highlight
+          article.box.highlight
+            header
+              h3
+                a(href='/blog/#{slug}') #{article.title}
+            a.image.left(href='/blog/#{slug}')
+              img(src='#{article.featuredImg}', alt='#{article.titlte}')
+            p
+              | Phasellus  sed laoreet massa id justo mattis pharetra. Fusce suscipit ligula vel quam
+              | viverra sit amet mollis tortor congue magna lorem ipsum dolor et quisque ut odio facilisis
+              | convallis. Etiam non nunc vel est suscipit convallis non id orci. Ut interdum tempus
+              | facilisis convallis. Etiam non nunc vel est suscipit convallis non id orci.
+            ul.actions
+              li
+                a.button.icon.fa-file(href='/blog/#{slug}') Leer Más

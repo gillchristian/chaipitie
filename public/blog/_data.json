@@ -1,9 +1,17 @@
 {
   "first": {
-    "title": "My second post"
-  },
-  "first": {
     "title": "My first post",
-    "featuredImg": "images/pic04.jpg"
+    "featuredImg": "/images/pic04.jpg",
+    "isFeatured": false
+  },
+  "second": {
+    "title": "My second post",
+    "featuredImg": "/images/pic04.jpg",
+    "isFeatured": true
+  },
+  "third": {
+    "title": "My third post",
+    "featuredImg": "/images/pic04.jpg",
+    "isFeatured": true
   }
 }
