@@ -1,0 +1,20 @@
+{
+  "first": {
+    "title": "Vegan lemo pie",
+    "featuredImg": "/images/pic04.jpg",
+    "isFeatured": true,
+    "type": "vegano"
+  },
+  "second": {
+    "title": "Papas fritas sin aceite",
+    "featuredImg": "/images/pic04.jpg",
+    "isFeatured": false,
+    "type": "salado"
+  },
+  "third": {
+    "title": "Power smoothie",
+    "featuredImg": "/images/pic04.jpg",
+    "isFeatured": true,
+    "type": "fit"
+  }
+}

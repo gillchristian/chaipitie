@@ -1,0 +1,16 @@
+- function excerpt(content) {
+  - if(content.indexOf("<!-- more -->") == -1) return content;
+  - else return content.split("<!-- more -->")[0];
+- }
+
+- each article, slug in public.recetas._data
+  article.box.post
+    header
+      h2
+        a(href='/recetas/#{slug}') #{article.title}
+    a.image.featured(href='/recetas/#{slug}')
+      img(src='#{article.featuredImg}', alt='#{article.title}')
+    != excerpt(partial(slug))
+    ul.actions
+      li
+        a.button.icon.fa-file(href='/recetas/#{slug}') Leer Más

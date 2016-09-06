@@ -1,0 +1,22 @@
+doctype html
+html
+  include ../_partials/_head
+  body
+    #page-wrapper
+      include ../_partials/_header
+
+      //- this is the content section
+      // Main
+      #main-wrapper
+        #main.container
+          if current.source === 'index'
+            != yield
+          else
+            #content
+            - var article = current.source
+            - var post = public.recetas._data[article];
+            - post.yield = partial(article);
+            != partial("../_partials/_decorator", post)
+
+      include ../_partials/_footer
+    include ../_partials/_scripts
